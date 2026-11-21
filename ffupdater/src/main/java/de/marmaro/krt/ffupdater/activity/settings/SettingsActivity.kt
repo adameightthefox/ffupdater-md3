@@ -1,5 +1,6 @@
 package de.marmaro.krt.ffupdater.activity.settings
 
+import de.marmaro.krt.ffupdater.settings.AmoledTheme
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.View
@@ -42,6 +43,7 @@ import rikka.shizuku.Shizuku
 class SettingsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AmoledTheme.apply(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
         AppCompatDelegate.setDefaultNightMode(ForegroundSettings.themePreference)
@@ -120,6 +122,11 @@ class SettingsActivity : AppCompatActivity() {
         private fun listenForThemeChanges() {
             findListPref("foreground__theme_preference").setOnPreferenceChangeListener { _, newValue ->
                 AppCompatDelegate.setDefaultNightMode((newValue as String).toInt())
+                true
+            }
+            findSwitchPref("foreground__amoled_black").setOnPreferenceChangeListener { _, _ ->
+                // recreate after the new value was persisted
+                requireActivity().window.decorView.post { activity?.recreate() }
                 true
             }
         }

@@ -297,4 +297,6 @@
     <string name="midori__title">Midori</string>
     <string name="midori__description">Lightweight, fast and free GeckoView-based browser with tabs, private browsing and extension support.</string>
     <string name="midori__warning">- Midori is distributed by several channels (GitHub, F-Droid, Google Play). Builds from different channels may be signed with different keys and can\'t update each other.</string>
+    <string name="settings__foreground__amoled_black__title">AMOLED black theme</string>
+    <string name="settings__foreground__amoled_black__summary">Use pure black backgrounds in the dark theme. Saves battery on OLED displays.</string>
 </resources>

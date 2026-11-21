@@ -285,4 +285,15 @@
     <string name="main_activity__update_all_apps_dialog__message">Следует ли обновлять устаревшие и не отключенные приложения? Обновления будут загружаться в фоновом режиме. Когда загрузка будет завершена, Вы будете оповещены уведомлением. Вам необходимо нажать на него, чтобы запустить обновление.</string>
     <string name="ironfox__title">IronFox</string>
     <string name="ironfox__description">Браузер для Android на базе Firefox, ориентированный на конфиденциальность и безопасность.</string>
+    <string name="waterfox__title">Waterfox</string>
+    <string name="waterfox__description">Браузер на базе Firefox (Fenix/GeckoView) от BrowserWorks, ориентированный на конфиденциальность. Без телеметрии, стабильный движок ESR и полная поддержка дополнений из каталога Mozilla.</string>
+    <string name="waterfox__warning">- Сборка с GitHub подписана другим ключом, чем сборка из Google Play. Установленный из Play Store Waterfox нельзя обновить через FFUpdater: сначала удалите его (данные браузера будут удалены).</string>
+    <string name="titanium__title">Titanium (бывший Helium)</string>
+    <string name="titanium__description">Браузер на базе Chromium с поддержкой десктопных расширений (Chrome Web Store, uBlock Origin). Основан на защитных патчах GrapheneOS Vanadium. Ранее назывался «Helium Browser for Android».</string>
+    <string name="titanium__warning">- Titanium — неофициальный проект сообщества (jqssun), не связанный с десктопным браузером Helium.\n- Он использует технологическую основу Google Chrome и тем самым косвенно поддерживает монополию движка Chromium.\n- Расширения увеличивают поверхность атаки. Для лучшей защиты используйте GrapheneOS с Vanadium.</string>
+    <string name="midori__title">Midori</string>
+    <string name="midori__description">Лёгкий, быстрый и свободный браузер на базе GeckoView со вкладками, приватным режимом и поддержкой расширений.</string>
+    <string name="midori__warning">- Midori распространяется по нескольким каналам (GitHub, F-Droid, Google Play). Сборки из разных каналов могут быть подписаны разными ключами и не обновляют друг друга.</string>
+    <string name="settings__foreground__amoled_black__title">Чёрная тема для AMOLED</string>
+    <string name="settings__foreground__amoled_black__summary">Использовать чисто чёрный фон в тёмной теме. Экономит заряд на OLED-экранах.</string>
 </resources>

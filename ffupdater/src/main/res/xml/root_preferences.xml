@@ -28,6 +28,13 @@
             app:title="@string/settings__foreground__theme_preference__title" />
 
         <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="foreground__amoled_black"
+            app:singleLineTitle="false"
+            app:summary="@string/settings__foreground__amoled_black__summary"
+            app:title="@string/settings__foreground__amoled_black__title" />
+
+        <SwitchPreferenceCompat
             app:defaultValue="true"
             app:key="foreground__delete_cache_if_install_successful"
             app:singleLineTitle="false"

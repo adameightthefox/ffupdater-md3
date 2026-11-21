@@ -1,5 +1,6 @@
 package de.marmaro.krt.ffupdater.activity.download
 
+import de.marmaro.krt.ffupdater.settings.AmoledTheme
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -103,6 +104,7 @@ class DownloadActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AmoledTheme.apply(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_download)
         AppCompatDelegate.setDefaultNightMode(ForegroundSettings.themePreference)

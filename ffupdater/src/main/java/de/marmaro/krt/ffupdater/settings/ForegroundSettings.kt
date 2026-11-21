@@ -41,6 +41,10 @@ object ForegroundSettings {
             }
         }
 
+    /** pure black backgrounds in the dark theme (saves battery on OLED/AMOLED displays) */
+    val isAmoledBlack
+        get() = preferences.getBoolean("foreground__amoled_black", false)
+
     val isDeleteUpdateIfInstallSuccessful
         get() = preferences.getBoolean("foreground__delete_cache_if_install_successful", true)
 

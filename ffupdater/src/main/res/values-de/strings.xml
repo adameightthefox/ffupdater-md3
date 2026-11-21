@@ -266,4 +266,15 @@
     <string name="download_activity__retry_installation">Installation erneut versuchen</string>
     <string name="thunderbird__title">Thunderbird</string>
     <string name="thunderbird_beta__title">Thunderbird Beta</string>
+    <string name="waterfox__title">Waterfox</string>
+    <string name="waterfox__description">Datenschutzorientierter Browser auf Firefox-Basis (Fenix/GeckoView) von BrowserWorks. Keine Telemetrie, stabile ESR-Engine und volle Unterstützung für Add-ons aus dem Mozilla-Add-on-Store.</string>
+    <string name="waterfox__warning">- Der GitHub-Build ist mit einem anderen Schlüssel signiert als der Google-Play-Build. Eine aus dem Play Store installierte Version kann FFUpdater nicht aktualisieren: Deinstalliere sie zuerst (dabei werden die Browserdaten gelöscht).</string>
+    <string name="titanium__title">Titanium (früher Helium)</string>
+    <string name="titanium__description">Chromium-basierter Browser mit Unterstützung für Desktop-Erweiterungen (Chrome Web Store, uBlock Origin). Baut auf den Härtungs-Patches von GrapheneOS Vanadium auf. Früher bekannt als „Helium Browser for Android“.</string>
+    <string name="titanium__warning">- Titanium ist ein inoffizielles Community-Projekt (jqssun) und nicht mit dem Desktop-Browser Helium verbunden.\n- Es nutzt die technische Grundlage von Google Chrome und unterstützt damit indirekt die Monopolstellung der Chromium-Engine.\n- Erweiterungen vergrößern die Angriffsfläche. Für den besten Schutz solltest du GrapheneOS mit Vanadium verwenden.</string>
+    <string name="midori__title">Midori</string>
+    <string name="midori__description">Leichter, schneller und freier Browser auf GeckoView-Basis mit Tabs, privatem Modus und Erweiterungsunterstützung.</string>
+    <string name="midori__warning">- Midori wird über mehrere Kanäle verteilt (GitHub, F-Droid, Google Play). Builds aus verschiedenen Kanälen können mit unterschiedlichen Schlüsseln signiert sein und sich nicht gegenseitig aktualisieren.</string>
+    <string name="settings__foreground__amoled_black__title">AMOLED-Schwarz</string>
+    <string name="settings__foreground__amoled_black__summary">Reines Schwarz als Hintergrund im dunklen Design verwenden. Spart Akku bei OLED-Displays.</string>
 </resources>

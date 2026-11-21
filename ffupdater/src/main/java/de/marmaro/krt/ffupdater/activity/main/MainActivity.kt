@@ -1,5 +1,6 @@
 package de.marmaro.krt.ffupdater.activity.main
 
+import de.marmaro.krt.ffupdater.settings.AmoledTheme
 import android.Manifest.permission.POST_NOTIFICATIONS
 import android.R.color.holo_blue_dark
 import android.R.color.holo_blue_light
@@ -66,9 +67,12 @@ import kotlin.coroutines.cancellation.CancellationException
 @Keep
 class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: MainRecyclerView
+    private var amoledWasActive = false
     private val recyclerViewMutex = Mutex()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AmoledTheme.apply(this)
+        amoledWasActive = AmoledTheme.isActive(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         AppCompatDelegate.setDefaultNightMode(ForegroundSettings.themePreference)
@@ -148,6 +152,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onResume() {
+        if (AmoledTheme.isActive(this) != amoledWasActive) {
+            // the AMOLED switch was changed in the settings
+            recreate()
+        }
         super.onResume()
         lifecycleScope.launch(Dispatchers.Main) {
             showInstalledApps()
