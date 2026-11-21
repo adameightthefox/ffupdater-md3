@@ -80,11 +80,29 @@ android {
         buildConfig = true
     }
 
+    // Fork signing: when CI provides a keystore (FORK_KEYSTORE_FILE), every build is signed with the same key,
+    // so the APKs can update each other and FFUpdater can verify its own signature.
+    def forkKeystore = System.getenv("FORK_KEYSTORE_FILE")
+    signingConfigs {
+        fork {
+            if (forkKeystore) {
+                storeFile file(forkKeystore)
+                storePassword System.getenv("FORK_KEYSTORE_PASSWORD")
+                keyAlias System.getenv("FORK_KEY_ALIAS")
+                keyPassword System.getenv("FORK_KEY_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
+        debug {
+            if (forkKeystore) signingConfig signingConfigs.fork
+        }
         release {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            if (forkKeystore) signingConfig signingConfigs.fork
         }
     }
 
