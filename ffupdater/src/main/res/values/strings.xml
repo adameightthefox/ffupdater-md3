@@ -288,4 +288,13 @@
     <string name="update_all_activity__installation_successful">Installation of \'%1$s\' successful. Certificate hash: %2$s</string>
     <string name="ironfox__title">IronFox</string>
     <string name="ironfox__description">Privacy and security-oriented Firefox-based web browser for Android.</string>
+    <string name="waterfox__title">Waterfox</string>
+    <string name="waterfox__description">Privacy-focused Firefox-based (GeckoView/Fenix) browser from BrowserWorks. Zero telemetry, ESR engine and full add-on support from the Mozilla add-on store.</string>
+    <string name="waterfox__warning">- The GitHub build is signed with a different key than the Google Play build. An existing Play Store installation can\'t be updated with FFUpdater: uninstall it first (this deletes your browser data).</string>
+    <string name="titanium__title">Titanium (ex-Helium)</string>
+    <string name="titanium__description">Chromium-based browser with desktop extension support (Chrome Web Store, uBlock Origin). Built on GrapheneOS Vanadium hardening. Formerly known as \"Helium Browser for Android\".</string>
+    <string name="titanium__warning">- Titanium is an unofficial community project (jqssun) and is not affiliated with the desktop Helium browser.\n- It uses the technical foundation of Google Chrome and thus indirectly supports the monopoly position of the Chromium render engine.\n- Extensions increase the attack surface. For the best protection use GrapheneOS with Vanadium.</string>
+    <string name="midori__title">Midori</string>
+    <string name="midori__description">Lightweight, fast and free GeckoView-based browser with tabs, private browsing and extension support.</string>
+    <string name="midori__warning">- Midori is distributed by several channels (GitHub, F-Droid, Google Play). Builds from different channels may be signed with different keys and can\'t update each other.</string>
 </resources>

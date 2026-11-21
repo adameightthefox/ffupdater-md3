@@ -18,6 +18,8 @@ Software from Mozilla or based on Firefox:
   [Firefox Klar](https://play.google.com/store/apps/details?id=org.mozilla.klar)
   ([GitHub Repository](https://github.com/mozilla-mobile/firefox-android))
 - [Iceraven](https://github.com/fork-maintainers/iceraven-browser)
+- [Waterfox](https://github.com/BrowserWorks/waterfox-android)
+- [Midori](https://github.com/goastian/midori-android)
 - [Tor Browser](https://www.torproject.org/download),
   [Tor Browser Alpha](https://www.torproject.org/download/alpha/)
 - [Thunderbird for Android](https://play.google.com/store/apps/details?id=net.thunderbird.android),
@@ -36,6 +38,7 @@ Browser which are better than Google Chrome:
 - [Privacy Browser](https://f-droid.org/en/packages/com.stoutner.privacybrowser.standard/)
 - [Vivaldi](https://vivaldi.com/download/) ([Incomplete Source Code](https://vivaldi.com/source/))
 - [Thorium](https://github.com/Alex313031/Thorium-Android)
+- [Titanium (formerly Helium Browser for Android)](https://github.com/jqssun/android-titanium-browser)
 
 Other applications:
 

@@ -19,3 +19,6 @@ The apps are downloaded from these locations:
 - Tor Browser Alpha: <https://www.torproject.org/download/alpha/>
 - Vivaldi: <https://vivaldi.com/download/>
 - Thorium: <https://api.github.com/repos/Alex313031/Thorium-Android/releases/latest>
+- Waterfox: [https://api.github.com/repos/BrowserWorks/waterfox-android/releases/latest](https://api.github.com/repos/BrowserWorks/waterfox-android/releases/latest)
+- Titanium (formerly Helium Browser for Android): [https://api.github.com/repos/jqssun/android-titanium-browser/releases/latest](https://api.github.com/repos/jqssun/android-titanium-browser/releases/latest)
+- Midori: [https://api.github.com/repos/goastian/midori-android/releases/latest](https://api.github.com/repos/goastian/midori-android/releases/latest)

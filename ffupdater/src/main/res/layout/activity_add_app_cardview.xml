@@ -3,24 +3,20 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
-    style="@style/Widget.Material3.CardView.Outlined"
+    style="@style/Widget.Material3.CardView.Filled"
     app:cardUseCompatPadding="false"
-    android:layout_marginTop="2dp"
-    android:layout_marginBottom="2dp"
-    app:cardBackgroundColor="@color/main_activity__cardview_background_color">
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp">
+        android:layout_margin="12dp">
 
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/app_icon"
             android:scaleType="centerInside"
@@ -29,12 +25,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            style="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="12dp"
             android:layout_marginEnd="8dp"
-            android:fontFamily="sans-serif-light"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
             android:gravity="start"
             android:tag="title"
             app:layout_constraintStart_toEndOf="@id/icon"
@@ -43,7 +38,7 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:background="@android:color/transparent"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/add_app_activity__add_new_application"
             android:tag="add_app"
             app:layout_constraintEnd_toEndOf="parent"

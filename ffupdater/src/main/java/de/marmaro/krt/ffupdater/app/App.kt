@@ -28,6 +28,9 @@ import de.marmaro.krt.ffupdater.app.impl.ThunderbirdRelease
 import de.marmaro.krt.ffupdater.app.impl.TorBrowser
 import de.marmaro.krt.ffupdater.app.impl.TorBrowserAlpha
 import de.marmaro.krt.ffupdater.app.impl.Vivaldi
+import de.marmaro.krt.ffupdater.app.impl.Waterfox
+import de.marmaro.krt.ffupdater.app.impl.Titanium
+import de.marmaro.krt.ffupdater.app.impl.Midori
 
 @Keep
 enum class App {
@@ -56,7 +59,11 @@ enum class App {
     THUNDERBIRD_BETA,
     TOR_BROWSER,
     TOR_BROWSER_ALPHA,
-    VIVALDI;
+    VIVALDI,
+    // appended at the end: the ordinal is used for the installation chronology
+    WATERFOX,
+    TITANIUM,
+    MIDORI;
 
     fun findImpl(): AppBase {
         return when (this) {
@@ -86,6 +93,9 @@ enum class App {
             TOR_BROWSER -> TorBrowser
             TOR_BROWSER_ALPHA -> TorBrowserAlpha
             VIVALDI -> Vivaldi
+            WATERFOX -> Waterfox
+            TITANIUM -> Titanium
+            MIDORI -> Midori
         }
     }
 

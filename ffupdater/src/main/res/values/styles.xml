@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="main_activity__theme" parent="@style/Theme.Material3.DayNight.NoActionBar">
-        <item name="colorSurface">@color/colorPrimary</item>
-        <item name="android:statusBarColor">@color/colorPrimary</item>
+    <!-- Material 3 base theme. On Android 12+ the colors come from the wallpaper (DynamicColors, see FFUpdater.kt),
+         on older devices the colorPrimary seed below is used. -->
+    <style name="Theme.FFUpdater" parent="@style/Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Material3.Corner.Large</item>
     </style>
+
+    <!-- same look, but with the system action bar for the activities that still use it -->
+    <style name="Theme.FFUpdater.ActionBar" parent="@style/Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Material3.Corner.Large</item>
+    </style>
+
+    <style name="main_activity__theme" parent="@style/Theme.FFUpdater" />
 
     <style name="crash_report__theme" parent="@style/Theme.Material3.DayNight">
         <item name="colorPrimary">@color/crash_report__error_red</item>
@@ -12,8 +26,8 @@
         <item name="colorAccent">@color/crash_report__color_accent</item>
     </style>
 
-    <style name="main_activity__main_title">
-        <item name="titleTextColor">@android:color/white</item>
+    <style name="main_activity__main_title" parent="@style/Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">?attr/textAppearanceTitleLarge</item>
     </style>
 
     <style name="install_activity__default_text">

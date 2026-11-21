@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- PLACEHOLDER icon: replace with the official project logo (PNG/WebP) before release -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp" android:height="48dp"
+    android:viewportWidth="48" android:viewportHeight="48">
+    <path android:fillColor="#0A84FF" android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0"/>
+    <path android:fillColor="#FFFFFF" android:pathData="M12,14h4l3,13 4,-13h2l4,13 3,-13h4l-5,20h-3l-4,-13 -4,13h-3z"/>
+</vector>

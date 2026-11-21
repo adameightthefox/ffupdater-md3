@@ -69,6 +69,9 @@
         <package android:name="us.spotco.mulch" />
         <package android:name="us.spotco.mulch_wv" />
         <package android:name="org.ironfoxoss.ironfox" />
+        <package android:name="net.waterfox.android.release" />
+        <package android:name="io.github.jqssun.helium" />
+        <package android:name="org.midorinext.android" />
     </queries>
 
     <application
@@ -85,7 +88,7 @@
             android:name=".activity.add.AddAppActivity"
             android:label="@string/add_app_activity__label"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.Material3.DayNight"
+            android:theme="@style/Theme.FFUpdater.ActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".crash.CrashReportActivity"
@@ -95,19 +98,19 @@
         <activity
             android:name=".activity.settings.SettingsActivity"
             android:label="@string/settings_activity__label"
-            android:theme="@style/Theme.Material3.DayNight"
+            android:theme="@style/Theme.FFUpdater.ActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".activity.download.DownloadActivity"
             android:label="@string/download_activity__label"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.Material3.DayNight"
+            android:theme="@style/Theme.FFUpdater.ActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".activity.updateall.UpdateAllActivity"
             android:label="@string/update_all_activity__label"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.Material3.DayNight"
+            android:theme="@style/Theme.FFUpdater.ActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".activity.main.MainActivity"

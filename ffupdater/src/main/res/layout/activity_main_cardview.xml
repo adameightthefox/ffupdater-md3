@@ -5,22 +5,21 @@
     android:layout_gravity="center_horizontal"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
     android:tag="appCard"
-    app:cardBackgroundColor="@color/main_activity__cardview_background_color"
-    app:cardUseCompatPadding="true">
+    style="@style/Widget.Material3.CardView.Filled"
+    app:cardUseCompatPadding="false">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp">
+        android:layout_margin="16dp">
 
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:contentDescription="@string/app_icon"
             android:tag="appIcon"
             app:layout_constraintStart_toStartOf="parent"
@@ -28,12 +27,11 @@
 
         <TextView
             android:id="@+id/appTitle"
-            style="@style/TextAppearance.AppCompat.Large"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="12dp"
             android:layout_marginEnd="4dp"
-            android:fontFamily="sans-serif-light"
+            android:textAppearance="?attr/textAppearanceTitleLarge"
             android:gravity="start"
             android:tag="appCardTitle"
             app:layout_constraintEnd_toStartOf="@id/info_button"
@@ -45,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="6dp"
-            android:background="@android:color/transparent"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/app_card__information_about_the_app"
             android:tag="appInfoButton"
             app:layout_constraintEnd_toEndOf="@id/appDownloadButton"
@@ -57,12 +55,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:tag="appInstalledVersion"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/appTitle" />
 
         <TextView
-            style="@style/TextAppearance.AppCompat.Small"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -74,7 +75,7 @@
             android:id="@+id/appDownloadButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/app_card__download_the_app"
             android:tag="appDownloadButton"
             app:layout_constraintBottom_toBottomOf="parent"

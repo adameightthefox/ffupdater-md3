@@ -5,6 +5,7 @@ import androidx.annotation.Keep
 import androidx.preference.PreferenceManager
 import androidx.work.Configuration
 import androidx.work.WorkManager
+import com.google.android.material.color.DynamicColors
 import de.marmaro.krt.ffupdater.background.BackgroundWork
 import de.marmaro.krt.ffupdater.crash.CrashListener
 import de.marmaro.krt.ffupdater.device.InstalledAppsCache
@@ -28,6 +29,8 @@ import kotlinx.coroutines.launch
 class FFUpdater : Application() {
     override fun onCreate() {
         super.onCreate()
+        // Material You: use the wallpaper based color scheme on Android 12+
+        DynamicColors.applyToActivitiesIfAvailable(this)
         CrashListener.showNotificationForUncaughtException(applicationContext)
 
         StrictModeSetup.enableStrictMode()
