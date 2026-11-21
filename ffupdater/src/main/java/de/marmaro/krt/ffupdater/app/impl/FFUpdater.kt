@@ -13,7 +13,9 @@ import de.marmaro.krt.ffupdater.network.exceptions.NetworkException
 import de.marmaro.krt.ffupdater.network.github.GithubConsumer
 
 /**
- * https://api.github.com/repos/Tobi823/ffupdater/releases
+ * https://api.github.com/repos/adameightthefox/ffupdater-md3/releases
+ *
+ * Fork of https://github.com/Tobi823/ffupdater. The release tag must be equal to versionName (e.g. 82.0.0-adam).
  */
 @Keep
 object FFUpdater : AppBase() {
@@ -28,7 +30,7 @@ object FFUpdater : AppBase() {
 
     override val signatureHash = "f4e642bb85cbbcfd7302b2cbcbd346993a41067c27d995df492c9d0d38747e62"
     override val installableByUser = false
-    override val projectPage = "https://github.com/Tobi823/ffupdater"
+    override val projectPage = "https://github.com/adameightthefox/ffupdater-md3"
     override val displayCategory = listOf(OTHER)
     override val differentSignatureMessage = R.string.ffupdater__different_signature_message
     override val hostnameForInternetCheck = "https://api.github.com"
@@ -37,7 +39,7 @@ object FFUpdater : AppBase() {
     @Throws(NetworkException::class)
     override suspend fun fetchLatestUpdate(context: Context): LatestVersion {
         val result = GithubConsumer.findLatestRelease(
-            repository = GithubConsumer.GithubRepo("Tobi823", "ffupdater", 0),
+            repository = GithubConsumer.GithubRepo("adameightthefox", "ffupdater-md3", 0),
             isValidRelease = { !it.isPreRelease },
             isSuitableAsset = { it.name.endsWith(".apk") },
             requireReleaseDescription = false,

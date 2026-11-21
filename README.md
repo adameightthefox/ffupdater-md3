@@ -1,11 +1,29 @@
-[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/app/de.marmaro.krt.ffupdater)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# Firefox-Updater
+# Firefox-Updater (fork: ffupdater-md3)
 
-Installs and updates the following browsers:
+> **This is a fork of [Tobi823/ffupdater](https://github.com/Tobi823/ffupdater).**
+> The original project has not been updated for a long time, so I (@adameightthefox) keep this fork alive with
+> new browsers and a modernised look. **I do not claim authorship of the app.** All credit for FFUpdater goes to
+> Tobias Hellmann ([Tobi823](https://github.com/Tobi823)), Boris Kraut and all
+> [contributors](#contributors-) of the original project. This fork only adds the changes listed below and
+> is published under the same license (GPL-3.0-or-later).
+>
+> Changes in this fork:
+>
+> - 🆕 New browsers: **Waterfox**, **Titanium** (formerly Helium Browser for Android) and **Midori**
+> - 🆕 Material 3 (Material You) design with dynamic colors
+> - 🆕 Optional pure black **AMOLED** theme (Settings -> below the theme selection)
+> - 🆕 Russian and German descriptions for the new browsers
+>
+> Note: the package name is still `de.marmaro.krt.ffupdater`, but the app is signed with a different key than the
+> original. You have to uninstall the original FFUpdater before installing this fork. The F-Droid / Google Play
+> versions of the original are **not** this fork. APK files are published in the
+> [releases of this repository](https://github.com/adameightthefox/ffupdater-md3/releases).
+
+Installs and updates the following browsers (🆕 = added in this fork, see [new browsers](docs/new_browsers.md)):
 
 Software from Mozilla or based on Firefox:
 
@@ -18,8 +36,8 @@ Software from Mozilla or based on Firefox:
   [Firefox Klar](https://play.google.com/store/apps/details?id=org.mozilla.klar)
   ([GitHub Repository](https://github.com/mozilla-mobile/firefox-android))
 - [Iceraven](https://github.com/fork-maintainers/iceraven-browser)
-- [Waterfox](https://github.com/BrowserWorks/waterfox-android)
-- [Midori](https://github.com/goastian/midori-android)
+- [Waterfox](https://github.com/BrowserWorks/waterfox-android) 🆕 **new**
+- [Midori](https://github.com/goastian/midori-android) 🆕 **new**
 - [Tor Browser](https://www.torproject.org/download),
   [Tor Browser Alpha](https://www.torproject.org/download/alpha/)
 - [Thunderbird for Android](https://play.google.com/store/apps/details?id=net.thunderbird.android),
@@ -38,7 +56,7 @@ Browser which are better than Google Chrome:
 - [Privacy Browser](https://f-droid.org/en/packages/com.stoutner.privacybrowser.standard/)
 - [Vivaldi](https://vivaldi.com/download/) ([Incomplete Source Code](https://vivaldi.com/source/))
 - [Thorium](https://github.com/Alex313031/Thorium-Android)
-- [Titanium (formerly Helium Browser for Android)](https://github.com/jqssun/android-titanium-browser)
+- [Titanium (formerly Helium Browser for Android)](https://github.com/jqssun/android-titanium-browser) 🆕 **new**
 
 Other applications:
 
@@ -55,6 +73,17 @@ interaction with:
 
 ## Thanks
 
+## New in this fork
+
+| Browser | Engine | Category | Source |
+|---|---|---|---|
+| 🆕 Waterfox | Gecko (Firefox ESR based) | Based on Firefox, good privacy | [BrowserWorks/waterfox-android](https://github.com/BrowserWorks/waterfox-android) |
+| 🆕 Titanium (ex-Helium) | Chromium + Vanadium patches | Better than Chrome, good privacy and security | [jqssun/android-titanium-browser](https://github.com/jqssun/android-titanium-browser) |
+| 🆕 Midori | GeckoView | Based on Firefox | [goastian/midori-android](https://github.com/goastian/midori-android) |
+
+Titanium is an unofficial community project and is not the desktop Helium browser. Details and open points:
+[docs/new_browsers.md](docs/new_browsers.md).
+
 ## FAQ
 
 - By clicking on the "i"-Icon, you can see the time of the last successful background update check.
@@ -65,7 +94,7 @@ interaction with:
 
 ## How to contribute
 
-You can improve the translation on [Weblate](https://hosted.weblate.org/projects/ffupdater). Current progress:
+You can improve the translation on [Weblate](https://hosted.weblate.org/projects/ffupdater) (this is the Weblate project of the original FFUpdater; translations of this fork's new strings are done via pull requests here). Current progress:
 [<img align="right" src="https://hosted.weblate.org/widgets/ffupdater/-/287x66-white.png" alt="Get involved in translating FFUpdater" />](https://hosted.weblate.org/engage/ffupdater/?utm_source=widget)
 
 [![Translation status](https://hosted.weblate.org/widgets/ffupdater/-/multi-auto.svg)](https://hosted.weblate.org/engage/ffupdater/?utm_source=widget)
@@ -142,9 +171,10 @@ For advanced users: [How to contribute](HOW_TO_CONTRIBUTE.md)
 
 ## Git repositories
 
-- Main repository: https://github.com/Tobi823/ffupdater
-- Mirror repository on notabug.org: https://notabug.org/Tobiwan/ffupdater
-- Mirror repository on Gitlab: https://gitlab.com/Tobiwan/ffupdater_gitlab
+- This fork: https://github.com/adameightthefox/ffupdater-md3
+- Original project (by Tobi823, no longer updated regularly): https://github.com/Tobi823/ffupdater
+  - Mirror on notabug.org: https://notabug.org/Tobiwan/ffupdater
+  - Mirror on Gitlab: https://gitlab.com/Tobiwan/ffupdater_gitlab
 
 ## License
 

@@ -11,7 +11,7 @@ assignees: ''
 
 1. Is your FFUpdater up-to-date? If not, please abort and update FFUpdater.
 
-2. Do you spot similar issues in https://github.com/Tobi823/ffupdater/issues? If yes, please abort and add your error message as a comment to the existing issue.
+2. Do you spot similar issues in https://github.com/adameightthefox/ffupdater-md3/issues? If yes, please abort and add your error message as a comment to the existing issue.
 
 **Describe the bug**
 Replace this paragraph with a clear and concise description of what the bug is.
