@@ -32,7 +32,7 @@ object Midori : AppBase() {
     override val minApiLevel = Build.VERSION_CODES.N // TODO: verify against the APK (minSdkVersion)
     override val supportedAbis = listOf(ABI.ARM64_V8A, ABI.ARMEABI_V7A, ABI.X86_64, ABI.X86)
     // TODO: replace with the SHA-256 of the signing certificate of the GitHub release APK
-    override val signatureHash = "0000000000000000000000000000000000000000000000000000000000000000"
+    override val signatureHash = "6f5011014de4da79ed746353fc63dd024ba6d7f80156142110e15a932c45a4d3"
     override val projectPage = "https://github.com/goastian/midori-android"
     override val displayCategory = listOf(BASED_ON_FIREFOX)
     override val hostnameForInternetCheck = "https://api.github.com"

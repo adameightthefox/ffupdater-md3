@@ -37,7 +37,7 @@ object Waterfox : AppBase() {
     override val supportedAbis = listOf(ABI.ARM64_V8A, ABI.X86_64)
     // TODO: replace with the SHA-256 of the signing certificate of the GitHub release APK
     //  (apksigner verify --print-certs waterfox-*.apk)
-    override val signatureHash = "0000000000000000000000000000000000000000000000000000000000000000"
+    override val signatureHash = "f091ca3998b49e159d23ee95586999c75d0b7023fcf9c54192a81300ac166e17"
     override val projectPage = "https://github.com/BrowserWorks/waterfox-android"
     override val displayCategory = listOf(BASED_ON_FIREFOX, GOOD_PRIVACY_BROWSER)
     override val hostnameForInternetCheck = "https://api.github.com"

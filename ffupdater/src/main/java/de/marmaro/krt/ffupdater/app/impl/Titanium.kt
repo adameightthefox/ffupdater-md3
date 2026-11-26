@@ -36,7 +36,7 @@ object Titanium : AppBase() {
     override val supportedAbis = listOf(ABI.ARM64_V8A, ABI.X86_64) // TODO: verify against release assets
     // TODO: replace with the SHA-256 of the signing certificate of the GitHub release APK.
     //  The GitHub and Google Play builds are meant to be update-compatible ("update between GitHub and Google Play").
-    override val signatureHash = "0000000000000000000000000000000000000000000000000000000000000000"
+    override val signatureHash = "095540494d53f48ca051bc86c392c46edb29725da5592bd8af3c3d027b3166bb"
     override val projectPage = "https://github.com/jqssun/android-titanium-browser"
     override val displayCategory = listOf(BETTER_THAN_GOOGLE_CHROME, GOOD_PRIVACY_BROWSER, GOOD_SECURITY_BROWSER)
     override val hostnameForInternetCheck = "https://api.github.com"
