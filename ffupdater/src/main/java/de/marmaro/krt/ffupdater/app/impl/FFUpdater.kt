@@ -28,7 +28,7 @@ object FFUpdater : AppBase() {
     override val minApiLevel = Build.VERSION_CODES.N
     override val supportedAbis = ALL_ABIS
 
-    override val signatureHash = "2646945c17dee07750857ed118fa6f157e55428442a12a8edf8208cea7e603cd"
+    override val signatureHash = "5f4e975fcf5226cc79653624eeac35a6d7e262b3d491b713036fb5ef080fba5f"
     override val installableByUser = false
     override val projectPage = "https://github.com/adameightthefox/ffupdater-md3"
     override val displayCategory = listOf(OTHER)
