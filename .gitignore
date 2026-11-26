@@ -71,3 +71,5 @@ fastlane/readme.md
 # signing keys must never be committed
 *.jks
 *.keystore
+*.jks
+*.b64
